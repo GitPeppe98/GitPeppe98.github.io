@@ -1,0 +1,82 @@
+#_progress {
+  --scroll: 0%;
+  background: linear-gradient(to right,rgb(12 184 182) var(--scroll), transparent 0);
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  left: 0;
+  top:0;
+}
+
+.goal-table {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 50%;
+  height: 150px;
+}
+.goal-table .goal {
+  color: #666;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.goal-table .goal i {
+  color: #18a79d;
+}
+
+.fixed-footer {
+  display: none;
+}
+
+.backdrop-container {
+  padding: 2% 7%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.backdrop-container #st-backtotop {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  z-index: 0;
+}
+
+@media screen and (max-width: 991px) {
+
+  .goal-table {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    height: 150px;
+  }
+
+  .fixed-footer {
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    background-color: #18a79d;
+    height: fit-content;
+    width: 100%;
+    bottom: 0;
+    z-index: 10;
+    font-size: 15px;
+  }
+
+  .fixed-footer .link{
+    display: block;
+    color: #ffff;
+    font-size: 20px;
+    padding: 4%;
+    font-weight: 600;
+  }
+
+  .fixed-footer .link:hover {
+    font-size: 18px;
+    transition: all 0.3s ease-out;
+  }
+
+}
+
+.cd-words-wrapper {
+  width: 100%;
+}
