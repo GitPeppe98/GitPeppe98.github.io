@@ -22,26 +22,20 @@
 
 .goal-table .goal i {
   color: #18a79d;
+  font-size: 1.5rem;
+  margin-right: 10px;
+  vertical-align: top;
 }
 
 .fixed-footer {
   display: none;
 }
 
-.backdrop-container {
-  padding: 2% 7%;
-  display: flex;
-  justify-content: flex-end;
-}
-
-.backdrop-container #st-backtotop {
-  width: 50px;
-  height: 50px;
-  cursor: pointer;
-  z-index: 0;
-}
-
 @media screen and (max-width: 991px) {
+
+  body {
+    margin-bottom: 72px;
+  }
 
   .goal-table {
     display: grid;
@@ -66,8 +60,9 @@
     display: block;
     color: #ffff;
     font-size: 20px;
-    padding: 4%;
+    padding: 25px;
     font-weight: 600;
+    text-align: center;
   }
 
   .fixed-footer .link:hover {
@@ -78,5 +73,60 @@
 }
 
 .cd-words-wrapper {
-  width: 100%;
+  width: 100% !important;
+}
+
+#contact-form {
+  flex-direction: column;
+}
+
+#contact-form .form-item {
+  margin: auto;
+}
+
+.st-project-img {
+  text-align: center;
+}
+
+.st-project-img img {
+  border-radius: 1em;
+}
+
+#contact::before {
+  content: '';
+  display: block;
+  height:      80px;
+  margin-top: -80px;
+  visibility: hidden;
+}
+
+::-webkit-scrollbar-track
+{
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar
+{
+  width: 12px;
+  height: 12px;
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	background-color: #18A79D;
+}
+
+.st-hero-shape img {
+  object-fit: cover;
+}
+
+.st-hero.st-style1 .st-hero-social-group {
+  bottom: 30px;
+}
+
+.st-site-branding img {
+    max-width: 60%;
 }
