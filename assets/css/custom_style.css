@@ -120,7 +120,7 @@
 }
 
 .st-hero-shape img {
-  object-fit: cover;
+  object-fit: unset;
 }
 
 .st-hero.st-style1 .st-hero-social-group {
