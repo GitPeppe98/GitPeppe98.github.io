@@ -31,6 +31,18 @@
   display: none;
 }
 
+.dark-section {
+  background-color: #35393a;
+}
+
+.dark-section * {
+  color: #ffff;
+}
+
+.st-hero-img img {
+  width: auto;
+}
+
 @media screen and (max-width: 991px) {
 
   body {
@@ -84,12 +96,12 @@
   margin: auto;
 }
 
-.st-project-img {
+.st-project-img, .centered-text {
   text-align: center;
 }
 
-.st-project-img img {
-  border-radius: 1em;
+.round-border {
+  border-radius: 1em !important;
 }
 
 #contact::before {
@@ -128,5 +140,141 @@
 }
 
 .st-site-branding img {
-    max-width: 60%;
+  max-width: 60%;
+}
+
+.card-title-medium {
+  font-weight: 700;
+  font-size: 34px;
+}
+
+.card-title-huge {
+  font-weight: 900;
+  font-size: 78px;
+}
+
+.card-title-medium .num {
+  font-size: 29px;
+}
+
+.card-text {
+  font-size: 16px;
+  line-height: 1.6em;
+  font-weight: 400;
+  margin: 28px 0;
+  padding: 0 20px;
+}
+
+.menu {
+  margin: 28px 0;
+  padding: 0 20px;
+}
+
+
+.menu .menu-items {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.menu .menu-items.centered {
+  width: fit-content;
+  margin: auto;
+}
+
+.menu .menu-items .menu-item {
+  display: flex;
+  align-items: flex-start;
+  margin: 10px 0;
+}
+
+.menu .menu-items .menu-item .menu-item-icon {
+  color: #18a79d;
+}
+
+.menu .menu-items .menu-item .menu-item-text {
+  padding-left: 20px;
+  text-align: start
+}
+
+.card-shape {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.card-shape img {
+  width: 100%;
+  transform: rotate(180deg);
+  opacity: 0.2;
+}
+
+.card-transparent {
+  background-color: transparent !important;
+  border: 0 !important;
+}
+
+@media screen and (max-width: 1200px) {
+  .card-title-medium {
+    font-size: 27px;
+  }
+
+  .card-title-medium .num {
+    font-size: 24px;
+  }
+
+  .st-slider.st-style1.st-hero-slider1 {
+    position: relative;
+    display: block;
+    width: 100%;
+    top: 0;
+    right: 0;
+  }
+
+  .st-hero-img img {
+    margin: auto;
+    width: 60%;
+  }
+
+  .st-hero.st-style1 {
+    margin-bottom: -120px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .card-container {
+    max-width: 1200px;
+  }
+}
+
+.highlight-dot, .highlight-text {
+  color: #18a79d
+}
+
+.highlight-line {
+  width: 80%;
+  max-width: 250px;
+  height: 4px;
+  background-color: #18A79D;
+  margin: 7px auto;
+}
+
+.arrows-separator {
+  width: 100%;
+  margin: 20px 0;
+}
+
+.arrows-separator .icon {
+  color: #d9e0e5;
+}
+
+.arrow-vector {
+  width: 100%;
+  height: 5vw;
+}
+
+.arrow-vector svg {
+  width: 100%;
+  height: 100%;
 }
