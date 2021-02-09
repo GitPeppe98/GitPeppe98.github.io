@@ -691,6 +691,7 @@ hr {
   background-color: rgba(246, 171, 47, 0.1);
 }
 
+
 .st-gray-box {
   color: #9ea0a5;
   fill: #9ea0a5;
@@ -1917,6 +1918,8 @@ hr {
 .st-hero.st-style1 .st-hero-title {
   font-size: 60px;
   margin-bottom: 19px;
+  letter-spacing: -2px;
+    font-weight: 900;
 }
 
 .st-hero.st-style1 .st-hero-title b {
@@ -3327,6 +3330,7 @@ hr {
 .st-imagebox.st-style2 .st-imagebox-title {
   font-size: 32px;
   margin-bottom: 6px;
+  text-align: center;
 }
 
 .st-imagebox.st-style2 .st-imagebox-title span {
@@ -4925,7 +4929,7 @@ hr {
   width: 100%;
   left: 0;
   top: 0;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(56,84,90,1);
 }
 
 .st-page-heading>div {

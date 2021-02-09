@@ -87,7 +87,7 @@
         },
       });
     }
-    progressBar();
+    handleScroll();
   });
 
   $(window).on("resize", function () {
@@ -690,9 +690,9 @@
   }
 
   /*--------------------------------------------------------------
-    21. Progress Bar
+    21. Progress Bar & Back to Top 
   --------------------------------------------------------------*/
-  function progressBar() {
+  function handleScroll() {
     document.addEventListener(
       "scroll",
       function() {
@@ -705,6 +705,13 @@
         document
           .getElementById("_progress")
           .style.setProperty("--scroll", scrollPercent);
+
+          var backTop = document.getElementById('st-backtotop');
+          if (scrollTop > 0) {
+            backTop.classList.add('showBtn');
+          } else {
+            backTop.classList.remove('showBtn');
+          }
       },
       { passive: true }
     );
